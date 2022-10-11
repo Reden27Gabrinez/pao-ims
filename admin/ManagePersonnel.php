@@ -13,48 +13,76 @@
             <!-- /.card-header -->
             <div class="card-body">
 
+              <?php
+                  $query  = "SELECT * FROM users ORDER BY created_at DESC";
+                  $stmt   = $conn->prepare($query);
+                  $stmt   ->execute();
+                  $result = $stmt->get_result();
+              ?>
+
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                   <tr>
-                    <th>Name</th>
-                    <th>Status</th>
-                    <th>Address</th>
+                    <th>No.</th>
                     <th>Municipality</th>
-                    <th>Username</th>
-                    <th>Password</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Contact</th>
                     <th>Action</th>
                   </tr>
                 </thead>
                 <tbody>
 
+                <?php
+                    $counter = 0;
+                    while($row = $result->fetch_assoc())
+                    {
+                        $counter++;
+                        $timestamp  = $row['created_at'];
+                        $date       = date('d M Y',strtotime($timestamp));
+                        $time       = date('h:i A',strtotime($timestamp));
+                        if($row['role'] == "Admin")
+                        {}
+                        else
+                        {
+                ?>
+
                   <tr>
-                    <td>image</td>
-                    <td>sample</td>
-                    <td>sample</td>
-                    <td>sample</td>
-                    <td>sample</td>
-                    <td>sample</td>
+                    <td><?php echo $counter; ?></td>
+                    <td><?= $row['municipality']; ?></td>
+                    <td><?= $row['name']; ?></td>
+                    <td><?= $row['email']; ?></td>
+                    <td><?= $row['contact']; ?></td>
                     <td>
-                      <a href="class.php?DeletePersonnel=" class="btn btn-danger" title="delete"
+                      <a href="class.php?DeletePersonnel=<?= $row['id']; ?>" class="btn btn-danger" title="Delete"
                         onclick="return confirm('Do you want delete this record?');">
                         <span class=""><i class="fa fa-trash"></i></span>
                       </a>
                       <a href="Personnel-Edit.php?edit_personnel=" class="btn btn-warning"
-                        title="edit">
+                        title="Edit">
                         <span class=""><i class="fa fa-edit"></i></span>
+                      </a>
+                      <a title="View" href="" class="btn btn-info">
+                        <span><i class="fa fa-eye"></i></span>
                       </a>
                     </td>
                   </tr>
 
+                <?php
+                        }
+                    }
+                    $stmt->close();
+                    $conn->close();
+                ?>
+
                 </tbody>
                 <tfoot>
                   <tr>
-                    <th>Name</th>
-                    <th>Status</th>
-                    <th>Address</th>
+                    <th>No.</th>
                     <th>Municipality</th>
-                    <th>Username</th>
-                    <th>Password</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Contact</th>
                     <th>Action</th>
                   </tr>
                 </tfoot>

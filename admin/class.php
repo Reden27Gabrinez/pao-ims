@@ -24,4 +24,22 @@
         header("location: index.php?page=AddPersonnel");
     }
 
+        // delete personnel to database
+        if(isset($_GET['DeletePersonnel']))
+        {
+            $id = $_GET['DeletePersonnel'];
+    
+            $query = "DELETE FROM users WHERE id=? ";
+            $stmt  = $conn->prepare($query);
+            $stmt  -> bind_param("i",$id);
+            $stmt  -> execute();
+            $stmt       -> close();
+    
+            $conn       -> close();
+    
+            header('location:index.php?page=ManagePersonnel');
+            $_SESSION['response']="Successfully Deleted!";
+            $_SESSION['res_type']="danger";
+        }
+
 ?>
