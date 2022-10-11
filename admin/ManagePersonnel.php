@@ -58,17 +58,18 @@
                         onclick="return confirm('Do you want delete this record?');">
                         <span class=""><i class="fa fa-trash"></i></span>
                       </a>
-                      <a href="Personnel-Edit.php?edit_personnel=" class="btn btn-warning"
-                        title="Edit">
-                        <span class=""><i class="fa fa-edit"></i></span>
-                      </a>
-                      <a title="View" href="" class="btn btn-info">
-                        <span><i class="fa fa-eye"></i></span>
-                      </a>
+                      <button title="Edit" class="btn btn-warning" data-toggle="modal" type="button" data-target="#update_modal<?= $row['id']; ?>">
+                        <span class="fa fa-edit"></span>
+                      </button>
+                      <button title="View" class="btn btn-info" data-toggle="modal" type="button" data-target="#view_modal<?= $row['id']; ?>">
+                        <span class="fa fa-eye"></span>
+                      </button>
                     </td>
                   </tr>
 
                 <?php
+                          include 'update_personnel.php';
+                          include 'view_personnel.php';
                         }
                     }
                     $stmt->close();

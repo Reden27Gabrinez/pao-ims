@@ -35,13 +35,13 @@
                     <td>sample</td>
                     <td>sample</td>
                     <td>
-                      <a href="class.php?DeletePersonnel=" class="btn btn-danger" title="delete"
+                      <!-- <a href="class.php?DeletePersonnel=" class="btn btn-danger" title="delete"
                         onclick="return confirm('Do you want delete this record?');">
                         <span class=""><i class="fa fa-trash"></i></span>
-                      </a>
+                      </a> -->
                       <a href="Personnel-Edit.php?edit_personnel=" class="btn btn-warning"
                         title="edit">
-                        <span class=""><i class="fa fa-edit"></i></span>
+                        <span class="">Edit</span>
                       </a>
                     </td>
                   </tr>
