@@ -6,7 +6,7 @@
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="index.php" class="nav-link">CHAPTER | MUNICIPALITY | <?php echo $_SESSION['municipality']; ?></a>
+                    <a href="index.php" class="nav-link">MUNICIPALITY | <?php echo $_SESSION['municipality']; ?></a>
                 </li>
             </ul>
 

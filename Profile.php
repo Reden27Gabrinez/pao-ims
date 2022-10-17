@@ -16,8 +16,29 @@
             </div><!-- /.row -->
         </div><!-- /.container-fluid -->
 
+        <?php 
+            if(isset($_SESSION['response'])) 
+            { 
+        ?>
+                <div class="alert alert-<?= $_SESSION['res_type']; ?> alert-dismissible text-center">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <b><?= $_SESSION['response']; ?></b>
+                </div>
+        <?php 
+            } 
+            unset($_SESSION['response']); 
+        ?>
+
     </div>
     <!-- /.content-header -->
+
+
+            <?php
+                $user_id=$_SESSION['id'];
+                $ret=mysqli_query($conn,"select * from users where id='$user_id'");
+                while ($row=mysqli_fetch_array($ret)) 
+                {
+            ?>
 
                     <!-- Main content -->
                     <section class="content">
@@ -34,12 +55,12 @@
                                     alt="User profile picture">
                                 </div>
 
-                                <h3 class="profile-username text-center">Sample Name</h3>
+                                <h3 class="profile-username text-center"><?php  echo $row['name'];?></h3>
 
-                                <p class="text-muted text-center">09632357966</p>
+                                <p class="text-muted text-center"><?php  echo $row['contact'];?></p>
                                 <strong><i class="fas fa-map-marker-alt mr-1"></i> Location</strong>
 
-                                <p class="text-muted">Seoul, South Korea</p>
+                                <p class="text-muted"><?php  echo $row['municipality'];?></p>
 
                                 <a href="#" class="btn btn-primary btn-block"><b></b></a>
                             </div>
@@ -57,7 +78,7 @@
                                 <li class="nav-item"><a class="nav-link active" href="#activity" data-toggle="tab">User Info</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#timeline" data-toggle="tab">Change Pass</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#settings" data-toggle="tab">Settings</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#users_log" data-toggle="tab">Users Log</a></li>
+          
                                 </ul>
                             </div><!-- /.card-header -->
                             <div class="card-body">
@@ -68,7 +89,7 @@
                                     <div class="user-block">
                                         <img class="img-circle img-bordered-sm" src="admin/plugins/dist/img/avatar2.png" alt="user image">
                                         <span class="username">
-                                        <a href="#">Sample Name</a>
+                                        <a href="#"><?php  echo $row['name'];?></a>
                                         <a href="#" class="float-right btn-tool"><i class="fas fa-times"></i></a>
                                         </span>
                                         <span class="description"><label for="" class="badge badge-success">Online</label> - 
@@ -78,15 +99,15 @@
                                     <!-- /.user-block -->
                                     <div class="container">
                                         <label>Email:</label>
-                                        <span>sample@gmail.com</span>
+                                        <span><?php  echo $row['email'];?></span>
                                         <br>
 
                                         <label>Number:</label>
-                                        <span>09632357966</span>
+                                        <span><?php  echo $row['contact'];?></span>
                                         <br>
                                         
                                         <label>Address:</label>
-                                        <span>Seoul, South Korea</span>
+                                        <span><?php  echo $row['municipality'];?></span>
                                     </div>
                                     </div>
                                     <!-- /.post -->
@@ -140,32 +161,55 @@
                                     <div class="form-group row">
                                         <label for="inputName" class="col-sm-2 col-form-label">Name</label>
                                         <div class="col-sm-10">
-                                        <input required type="text" name="name" class="form-control text-monospace" id="inputName" value="Sample Name">
+                                        <input required type="text" name="name" class="form-control text-monospace" id="inputName" value="<?php  echo $row['name'];?>">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
                                         <div class="col-sm-10">
-                                        <input readonly type="email" name="email" class="form-control text-monospace" id="inputEmail" value="sample@gmail.com">
+                                        <input readonly type="email" name="email" class="form-control text-monospace" id="inputEmail" value="<?php  echo $row['email'];?>">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="inputName2" class="col-sm-2 col-form-label">Phone Number</label>
                                         <div class="col-sm-10">
-                                        <input required type="number" name="phnumber" class="form-control text-monospace" id="inputName2" value="09632357966">
+                                        <input required type="number" name="phnumber" class="form-control text-monospace" id="inputName2" value="<?php  echo $row['contact'];?>">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="inputExperience" class="col-sm-2 col-form-label">Address</label>
                                         <div class="col-sm-10">
-                                        <textarea required class="form-control text-monospace" name="address" id="inputExperience">Seoul, South Korea</textarea>
+                                        <textarea required class="form-control text-monospace" name="address" id="inputExperience"><?php  echo $row['municipality'];?></textarea>
                                         </div>
                                     </div>
 
                                     <div class="form-group row">
                                         <label for="" class="col-sm-2 col-form-label">Username</label>
                                         <div class="col-sm-10">
-                                        <textarea required class="form-control text-monospace" name="username" id="">user</textarea>
+                                        <textarea required class="form-control text-monospace" name="username" id=""><?php  echo $row['username'];?></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="" class="col-sm-2 col-form-label">Position</label>
+                                        <div class="col-sm-10">
+                                            <select required name="position" class="form-control select2 select2-danger"
+                                                data-dropdown-css-class="select2-danger" style="width: 100%;">
+                                                <option selected="selected" value="<?php  echo $row['position'];?>"><?php  echo $row['position'];?></option>
+                                                <option value="IT Staff">IT Staff</option>
+                                                <option value="Database Manager">Database Manager</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="" class="col-sm-2 col-form-label">Sex</label>
+                                        <div class="col-sm-10">
+                                            <select required name="sex" class="form-control select2" style="width: 100%;">
+                                                <option selected="selected" value="<?php  echo $row['sex'];?>"><?php  echo $row['sex'];?></option>
+                                                <option value="Male">Male</option>
+                                                <option value="Female">Female</option>
+                                            </select>
                                         </div>
                                     </div>
 
@@ -179,69 +223,7 @@
 
                                 <!-- /.tab-pane -->
 
-                                <div class="tab-pane" id="users_log">
-                                   
 
-                                    <section class="content">
-                                        <div class="container-fluid">
-                                        <div class="row">
-                                            <div class="col-12">
-
-
-                                            <div class="card">
-                                                <div class="card-header">
-                                                <h3 class="card-title">USERS LOG</h3>
-                                                </div>
-                                                <!-- /.card-header -->
-                                                <div class="card-body">
-
-                                                <table id="example1" class="table table-bordered table-striped">
-                                                    <thead>
-                                                    <tr>
-                                                        <th>NO.</th>
-                                                        <th>USER</th>
-                                                        <th>ACTION</th>
-                                                        <th>LOGS DATE</th>
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody>
-                                           
-                                                    <tr>
-                                                        
-                                                        <td>1</td>
-                                                        <td>user</td>
-                                                        <td>login</td>
-                                                        <td>October 09, 2022</td> 
-                                                    </tr>
-
-                                                    </tbody>
-                                                    <tfoot>
-                                                    <tr>
-
-                                                        <th>NO.</th>
-                                                        <th>USER</th>
-                                                        <th>ACTION</th>
-                                                        <th>LOGS DATE</th>
-                                                    </tr>
-                                                    </tfoot>
-                                                </table>
-                                                </div>
-                                                <!-- /.card-body -->
-                                            </div>
-                                            <!-- /.card -->
-
-
-                                            </div>
-                                            <!-- /.col -->
-                                        </div>
-                                        <!-- /.row -->
-                                        </div>
-                                        <!-- /.container-fluid -->
-                                    </section>
-
-
-
-                                </div>
 
                                 <!-- /.tab-pane -->
 
@@ -261,6 +243,9 @@
                         <!-- /.row -->
                     </div><!-- /.container-fluid -->
                     </section>
+        <?php              
+            }
+        ?>
 
 
 </div>
@@ -325,7 +310,7 @@
                         data: {
                             logout:lag
                         },
-                        url: 'class.php',
+                        url: 'logout.php',
                         success: function (data){
                             window.location.href='login.php';
                         }

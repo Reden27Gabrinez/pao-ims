@@ -1,7 +1,7 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
 
-    <a href="" target="_blank" class="brand-link" class="text-center">
+    <a href="https://saad.da.gov.ph/priority_provinces/region-x/misamis-occidental" target="_blank" class="brand-link" class="text-center">
       <img src="admin/plugins/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">PAOIMS</span>
     </a>
@@ -57,86 +57,26 @@
 
           <li class="nav-header mt-5 text-uppercase text-bold"><?php echo $_SESSION['municipality']; ?></li>
           <li class="nav-item">
-            <a href="index.php?page=Equipment-Oroquieta" class="nav-link">
+            <a href="index.php?page=Equipment" class="nav-link">
               <i class="fa fa-atom nav-icon"></i>
               <p>Equipment</p>
             </a>
           </li>
 
           <li class="nav-item">
-            <a href="index.php?page=Equipment-Oroquieta" class="nav-link">
+            <a href="index.php?page=AddEquipment" class="nav-link">
               <i class="fa fa-atom nav-icon"></i>
+              <p>Add FEM</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link" data-toggle="modal" data-target="#modal-sm">
+              <i class="fas fa-file-export nav-icon"></i>
               <p>Reports</p>
             </a>
           </li>
       
-          <li class="nav-item">
-            <a href="index.php?page=Equipment-Oroquieta" class="nav-link">
-              <i class="fa fa-atom nav-icon"></i>
-              <p>Export data</p>
-            </a>
-          </li>
-	<li class="nav-item">
-            <a href="index.php?page=Equipment-Oroquieta" class="nav-link">
-              <i class="fa fa-atom nav-icon"></i>
-              <p>Email Administrator</p>
-            </a>
-          </li>
-
-   
-          <!-- <li class="nav-item">
-            <a href="#" class="nav-link active">
-              <i class="nav-icon fas fa-mail-bulk"></i>
-              <p>
-                Sinacaban
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="index.php?page=Equipment-Sinacaban" class="nav-link">
-                  <i class="fa fa-atom nav-icon"></i>
-                  <p>Equipment</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link active">
-              <i class="nav-icon fas fa-wave-square"></i>
-              <p>
-                Jimenez
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="index.php?page=Equipment-Jimenez" class="nav-link">
-                  <i class="fa fa-atom nav-icon"></i>
-                  <p>Equipment</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-
-          <li class="nav-item">
-            <a href="#" class="nav-link active">
-              <i class="nav-icon fas fa-boxes"></i>
-              <p>
-                Panaon
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="index.php?page=Equipment-Panaon" class="nav-link">
-                  <i class="fa fa-atom nav-icon"></i>
-                  <p>Equipment</p>
-                </a>
-              </li>
-            </ul> -->
- 
-    
+  
           </li>
 
          

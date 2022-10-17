@@ -60,7 +60,7 @@
           <li class="nav-header">MUNICIPALITY</li>
           <li class="nav-item">
             <a href="#" class="nav-link active">
-              <i class="nav-icon fab fa-pied-piper-pp"></i>
+              <i class="nav-icon far fa-building"></i>
               <p>
                 Oroguieta
                 <i class="right fas fa-angle-left"></i>
@@ -71,6 +71,18 @@
                 <a href="index.php?page=Equipment-Oroquieta" class="nav-link">
                   <i class="fa fa-atom nav-icon"></i>
                   <p>Equipment</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="index.php?page=Equipment-Oroquieta" class="nav-link">
+                  <i class="fa fa-atom nav-icon"></i>
+                  <p>Machineries</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="index.php?page=Equipment-Oroquieta" class="nav-link">
+                  <i class="fa fa-atom nav-icon"></i>
+                  <p>Facility</p>
                 </a>
               </li>
             </ul>
