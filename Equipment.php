@@ -29,7 +29,8 @@
             <!-- /.card-header -->
             <div class="card-body">
               <?php
-                    $query  = "SELECT * FROM fem WHERE municipality = 'Baliangao' ORDER BY created_at DESC";
+                    $user   = $_SESSION['id'];
+                    $query  = "SELECT * FROM fem WHERE user = '$user' ORDER BY created_at DESC";
                     $stmt   = $conn->prepare($query);
                     $stmt   ->execute();
                     $result = $stmt->get_result();
@@ -63,8 +64,8 @@
                     <td><?= $row['use_facility']; ?></td>
                     <td><?= $row['facility_cond']; ?></td>
                     <td>
-                      <button title="Edit" class="btn btn-info" data-toggle="modal" type="button" data-target="#update_modal<?= $row['id']; ?>">
-                        <i class="fa fa-eye"></i>
+                      <button title="Edit" class="btn btn-warning" data-toggle="modal" type="button" data-target="#update_modal<?= $row['id']; ?>">
+                        Edit
                       </button>
                     </td>
                   </tr>
