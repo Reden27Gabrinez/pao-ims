@@ -30,32 +30,14 @@
       <!-- Sidebar Menu -->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-          <!-- <li class="nav-item">
-            <a href="#" class="nav-link active">
-              <i class="nav-icon fas fa-person-booth"></i>
-              <p>
-                Personnel
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="index.php?page=AddPersonnel" class="nav-link">
-                  <i class="fa fa-user-check nav-icon"></i>
-                  <p>Add Personnel</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="index.php?page=ManagePersonnel" class="nav-link">
-                  <i class="fa fa-atom nav-icon"></i>
-                  <p>Manage Personnel</p>
-                </a>
-              </li>
-            </ul>
-          </li> -->
-
 
           <li class="nav-header mt-5 text-uppercase text-bold"><?php echo $_SESSION['municipality']; ?></li>
+          <li class="nav-item">
+            <a href="index.php?page=AddEquipment" class="nav-link">
+              <i class="fa fa-plus nav-icon"></i>
+              <p>Add FEM</p>
+            </a>
+          </li>
           <li class="nav-item">
             <a href="index.php?page=Equipment" class="nav-link">
               <i class="fa fa-atom nav-icon"></i>
@@ -63,12 +45,7 @@
             </a>
           </li>
 
-          <li class="nav-item">
-            <a href="index.php?page=AddEquipment" class="nav-link">
-              <i class="fa fa-atom nav-icon"></i>
-              <p>Add FEM</p>
-            </a>
-          </li>
+
           <li class="nav-item">
             <a href="" class="nav-link" data-toggle="modal" data-target="#modal-sm">
               <i class="fas fa-file-export nav-icon"></i>

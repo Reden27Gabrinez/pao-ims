@@ -67,4 +67,32 @@
 		header('location:index.php?page=ManagePersonnel');
     }
 
+            // update user profile
+            if(isset($_POST['Update_profile']))
+            {
+                $name     = $_POST['name'];
+                $phone    = $_POST['phnumber'];
+                $username = $_POST['username'];
+                $email    = $_POST['email'];
+                $address  = $_POST['address'];
+                $position = $_POST['position'];
+                $sex      = $_POST['sex'];
+                $ser_id  = $_SESSION['id'];
+        
+                $query  = "UPDATE users SET name = ?, email = ?, Username = ?, contact = ?, municipality = ?,position=?,sex=? WHERE id = ? ";
+                $stmt   = $conn->prepare($query);
+                $stmt   -> bind_param("sssssssi",$name,$email,$username,$phone,$address,$position,$sex,$ser_id);
+                $stmt   -> execute();
+                $stmt       -> close();
+        
+                // $nameUser       = $_SESSION['name'];
+                // $query2	= "INSERT INTO logs (User,Purpose) VALUES ('$nameUser','$name | Admin Profile Updated')";
+                // $logs = mysqli_query($conn,$query2);
+        
+                $conn       -> close();
+        
+                $_SESSION['response']="Updated Successfully!";
+                $_SESSION['res_type']="primary";
+                header('location:index.php?page=Profile');
+            }
 ?>
