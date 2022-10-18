@@ -101,6 +101,7 @@
 
     if(isset($_POST['Add_FEM']))
     {
+        $muni           = $_SESSION['municipality'];
         $user           = $_SESSION['id'];
         $name_owner     = $_POST['name_owner'];
         $location       = $_POST['location'];
@@ -118,9 +119,9 @@
         $eng_brand      = $_POST['eng_brand'];
         $eng_hp         = $_POST['eng_hp'];
 
-        $query = "INSERT INTO fem (user,name_owner,location,type_owner,fem,units,capacity,brand,mode_aquisition,cost_aquisition,yr_acquired,use_facility,facility_cond,commodity,engine_brand,horsepower) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+        $query = "INSERT INTO fem (user,municipality,name_owner,location,type_owner,fem,units,capacity,brand,mode_aquisition,cost_aquisition,yr_acquired,use_facility,facility_cond,commodity,engine_brand,horsepower) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
         $stmt   = $conn->prepare($query);
-        $stmt   -> bind_param("ssssssssssssssss",$user,$name_owner,$location,$type_owner,$fem,$units,$capacity,$fac_brand,$mode_acqui,$cost_acqui,$yr_acqui,$use_fac,$fac_cond,$commodity,$eng_brand,$eng_hp);
+        $stmt   -> bind_param("sssssssssssssssss",$user,$muni,$name_owner,$location,$type_owner,$fem,$units,$capacity,$fac_brand,$mode_acqui,$cost_acqui,$yr_acqui,$use_fac,$fac_cond,$commodity,$eng_brand,$eng_hp);
         $stmt   -> execute();
         $stmt   -> close();
 

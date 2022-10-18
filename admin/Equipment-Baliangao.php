@@ -24,12 +24,12 @@
 
           <div class="card mt-5">
             <div class="card-header">
-              <h3 class="card-title">Panaon Equipment</h3>
+              <h3 class="card-title">Baliangao Equipment</h3>
             </div>
             <!-- /.card-header -->
             <div class="card-body">
               <?php
-                    $query  = "SELECT * FROM fem WHERE municipality = 'Panaon' ORDER BY created_at DESC";
+                    $query  = "SELECT * FROM fem WHERE municipality = 'Baliangao' ORDER BY created_at DESC";
                     $stmt   = $conn->prepare($query);
                     $stmt   ->execute();
                     $result = $stmt->get_result();

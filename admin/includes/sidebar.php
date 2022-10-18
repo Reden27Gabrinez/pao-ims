@@ -73,7 +73,7 @@
                   <p>Equipment</p>
                 </a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a href="index.php?page=Equipment-Oroquieta" class="nav-link">
                   <i class="fa fa-atom nav-icon"></i>
                   <p>Machineries</p>
@@ -84,7 +84,7 @@
                   <i class="fa fa-atom nav-icon"></i>
                   <p>Facility</p>
                 </a>
-              </li>
+              </li> -->
             </ul>
           </li>
           <li class="nav-item">
@@ -138,15 +138,31 @@
                 </a>
               </li>
             </ul>
- 
-    
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fas fa-boxes"></i>
+              <p>
+                Baliangao
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="index.php?page=Equipment-Baliangao" class="nav-link">
+                  <i class="fa fa-atom nav-icon"></i>
+                  <p>Equipment</p>
+                </a>
+              </li>
+            </ul>
           </li>
 
           <li class="nav-header">
             BACK UP
           </li>
           <li class="nav-item">
-            <a href="email/backupCloud.php" class="nav-link bg-warning">
+            <a href="backup/backupCloud.php" class="nav-link bg-warning">
               <i class="nav-icon fas fa-database"></i>
               <p>
                 Back up Database

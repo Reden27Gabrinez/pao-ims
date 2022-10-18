@@ -70,10 +70,11 @@
                     <option value="Calamba">Calamba</option>
                     <option value="Plaridel">Plaridel</option>
                     <option value="Lopez Jaena">Lopez Jaena</option>
-                    <option value="Oroquieta">Oroquieta</option>
+                    <option value="Oroquieta">Oroquieta City</option>
                     <option value="Aloran">Aloran</option>
                     <option value="Panaon">Panaon</option>
                     <option value="Jimenez">Jimenez</option>
+                    <option value="Sinacaban">Sinacaban</option>
                   </select>
                 </div>
               </div>

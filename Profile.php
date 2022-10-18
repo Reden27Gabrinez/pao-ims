@@ -1,4 +1,26 @@
 
+<?php
+        // chanage admin password
+    if(isset($_POST['update_pass']))
+    {
+          $muni_id         = $_SESSION['id'];
+          $cpassword    = md5($_POST['currentpassword']);
+          $newpassword  = md5($_POST['newpassword']);
+
+          $query=mysqli_query($conn,"SELECT id FROM users WHERE id='$muni_id' AND password='$cpassword'");
+          $row=mysqli_fetch_array($query);
+          if($row>0)
+          {
+              $ret=mysqli_query($conn,"UPDATE users SET password='$newpassword' where id='$muni_id'");
+              $_SESSION['response']="Your password successully changed!";
+
+          } 
+          else 
+          {
+                $_SESSION['response']="Your current password is wrong!";
+          }
+    }
+?>
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <div class="content-header">
@@ -78,6 +100,7 @@
                                 <li class="nav-item"><a class="nav-link active" href="#activity" data-toggle="tab">User Info</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#timeline" data-toggle="tab">Change Pass</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#settings" data-toggle="tab">Settings</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#users_log" data-toggle="tab">Users Log</a></li>
           
                                 </ul>
                             </div><!-- /.card-header -->
@@ -223,7 +246,85 @@
 
                                 <!-- /.tab-pane -->
 
+                                <div class="tab-pane" id="users_log">
+                                   
 
+                                   <section class="content">
+                                       <div class="container-fluid">
+                                       <div class="row">
+                                           <div class="col-12">
+
+
+                                           <div class="card">
+                                               <div class="card-header">
+                                               <h3 class="card-title">USERS LOG</h3>
+                                               </div>
+                                               <!-- /.card-header -->
+                                               <div class="card-body">
+                                               <?php
+                                                       $query  = "SELECT * FROM logs WHERE user = 'Baliangao' ORDER BY timesstamp DESC";
+                                                       $stmt   = $conn->prepare($query);
+                                                       $stmt   ->execute();
+                                                       $result = $stmt->get_result();
+                                                   ?>
+                                               <table id="example1" class="table table-bordered table-striped">
+                                                   <thead>
+                                                   <tr>
+                                                       <th>NO.</th>
+                                                       <th>USER</th>
+                                                       <th>ACTION</th>
+                                                       <th>LOGS DATE</th>
+                                                   </tr>
+                                                   </thead>
+                                                   <tbody>
+                                                   <?php
+                                                       $counter = 0;
+                                                       while($row = $result->fetch_assoc())
+                                                       {
+                                                           $counter++;
+                                                           $timestamp = $row['timesstamp'];
+                                                           $today = date("F j, Y, g:i A", strtotime($timestamp));  
+                                                   ?>
+                                                   <tr>
+                                                       
+                                                       <td><?php echo $counter; ?></td>
+                                                       <td><?= $row['user']; ?></td>
+                                                       <td><?= $row['actions']; ?></td>
+                                                       <td><?php echo $today; ?></td> 
+                                                   </tr>
+                                                   <?php
+                                                       }
+                                                       $stmt->close();
+                                                       // $conn->close();
+                                                   ?>
+                                                   </tbody>
+                                                   <tfoot>
+                                                   <tr>
+
+                                                       <th>NO.</th>
+                                                       <th>USER</th>
+                                                       <th>ACTION</th>
+                                                       <th>LOGS DATE</th>
+                                                   </tr>
+                                                   </tfoot>
+                                               </table>
+                                               </div>
+                                               <!-- /.card-body -->
+                                           </div>
+                                           <!-- /.card -->
+
+
+                                           </div>
+                                           <!-- /.col -->
+                                       </div>
+                                       <!-- /.row -->
+                                       </div>
+                                       <!-- /.container-fluid -->
+                                   </section>
+
+
+
+                               </div>
 
                                 <!-- /.tab-pane -->
 
