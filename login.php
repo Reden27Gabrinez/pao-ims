@@ -12,8 +12,12 @@
 	<link rel="stylesheet" href="assets/bootstrap/js/bootstrap.js">
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
 	<style>
+		.po
+		{
+			opacity: 0.7;
+		}
 	body {
-		background-image: url('assets/bg.png');
+		background-image: url('assets/bg2.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
@@ -21,9 +25,9 @@
 </head>
 
 <body>
-	<div class="shadow container d-flex justify-content-center align-items-center" style="min-height: 100vh">
-		<form class="border shadow p-3 rounded" action="class.php" method="post" style="width: 450px;">
-			<h1 class="text-center p-3 text-white">LOGIN</h1>
+	<div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh">
+		<form class=" border shadow p-3 rounded" action="class.php" method="post" style="width: 450px;">
+			<h1 class="text-center p-3">LOGIN</h1>
 
 			<?php if (isset($_GET['error'])) { ?>
 				<div class="alert alert-danger" role="alert">
@@ -44,7 +48,7 @@
 				</div>
 			</div>
 			<div class="mb-1">
-				<label class="form-label">User Type:</label>
+				<label class="form-label text-white badge-pill font-weight-bolder shadow bg-secondary">User Type:</label>
 			</div>
 			<select class="form-select mb-3" name="role" aria-label="Default select example">
 				<option selected value="Admin">Admin</option>
