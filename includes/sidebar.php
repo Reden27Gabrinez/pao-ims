@@ -52,6 +52,13 @@
               <p>Reports</p>
             </a>
           </li>
+
+          <li class="nav-item">
+            <a href="" class="nav-link" data-toggle="modal" data-target="#modal-sm-send">
+              <i class="fas fa-envelope nav-icon"></i>
+              <p>Send Data</p>
+            </a>
+          </li>
       
   
           </li>

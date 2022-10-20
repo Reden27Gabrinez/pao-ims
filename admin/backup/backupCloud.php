@@ -16,7 +16,7 @@ $mail->Port=587;
 $mail->SMTPSecure="tls";
 $mail->SMTPAuth=true;
 $mail->Username="paoims123@gmail.com";
-$mail->Password="hauoboihdjgxcvix";
+$mail->Password="hrvxqqtnmmimjeeh";
 $mail->SetFrom("paoims123@gmail.com");
 $mail->addAddress('paoims123@gmail.com');
 $mail->IsHTML(true);
@@ -37,5 +37,5 @@ if($mail->send()){
 }else{
 	echo "Error occur";
 }
-header('location:../dashboard.php');
+header('location:../index.php?page=dashboard');
 ?>

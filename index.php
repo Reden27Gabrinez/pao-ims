@@ -31,6 +31,7 @@
 
     <!-- modals for reports -->
     <?php include("modals/reports_equipment.php"); ?>
+    <?php include("modals/send_data.php"); ?>
 
     <!-- REQUIRED SCRIPTS -->
     <?php include_once("includes/scripts.php"); ?>
