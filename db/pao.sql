@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 18, 2022 at 11:34 AM
+-- Generation Time: Oct 20, 2022 at 05:39 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.29
 
@@ -55,13 +55,7 @@ CREATE TABLE `fem` (
 --
 
 INSERT INTO `fem` (`id`, `user`, `municipality`, `name_owner`, `location`, `type_owner`, `fem`, `units`, `capacity`, `brand`, `mode_aquisition`, `cost_aquisition`, `yr_acquired`, `use_facility`, `facility_cond`, `commodity`, `engine_brand`, `horsepower`, `created_at`, `updated_at`) VALUES
-(1, '14', 'Oroquieta', 'Arnulfo A. Migriño', 'Pines, Oroq. City', 'Individual', 'Mud Tractor', '1', '0.75 ha./day', '', 'Purchase', '', '', 'Private use', 'Functional', 'Rice', '', '', '2022-10-14 23:58:31', '2022-10-18 08:10:18'),
-(3, '13', 'Jimenez', 'red', 's2gdf', 'Individual', 'Mud Tractor', '32', '532', '132', 'Grant', '132', '132', 'Private use', 'Repair', 'Rice', '132', '132', '2022-10-15 21:57:55', '2022-10-18 07:49:10'),
-(4, '15', 'Sinacaban', 'haha', 'dfs', 'Coop', 'Ricemill', '12', '43', 'sfdsz', 'Loan', 'fs', 'fsa', 'Custom Hire', 'Repair', 'Rice & Corn', 'r34e', '34', '2022-10-15 22:39:35', '2022-10-18 09:33:27'),
-(5, '12', 'Baliangao', 's22342', 'Pines, Oroq. City', 'Trader', 'Tresher', '432', 'fsd', 'fsd', 'Loan', 'fsd', '423', 'Coop', 'Repair', 'Rice & Corn', 'r34e', '132', '2022-10-14 22:43:55', '2022-10-16 10:10:49'),
-(6, '12', 'Baliangao', 'cx321', 'nn', 'Coop', 'Tresher', '432', '432', 'fds', 'Loan', 'rew', 'fsd', 'Public use', 'Repair', 'Corn', 'xxc', '423', '2022-10-15 22:56:40', '2022-10-16 10:10:56'),
-(7, '12', 'Baliangao', 'naks', 'hkj', 'Coop', 'Ricemill', '980', '265', 'l\';', 'Loan', 'k;\'', 'k\';', 'Public use', 'Functional', 'Corn', 'gdf', '423', '2022-10-18 07:45:58', '2022-10-18 07:45:58'),
-(8, '13', 'Jimenez', 'vv', 'vv', 'Coop', 'Tresher', '4532', 'dasz', 'fds', 'Loan', '52', '342', 'Coop', 'Functional', 'Rice & Corn', '453', '453', '2022-10-18 07:50:37', '2022-10-18 07:50:37');
+(1, '14', 'Oroquieta', 'Arnulfo A. Migriño', 'Pines, Oroq. City', 'Individual', 'Mud Tractor', '1', '0.75 ha./day', '', 'Purchase', '', '', 'Private use', 'Functional', 'Rice', '', '', '2022-10-14 23:58:31', '2022-10-18 08:10:18');
 
 -- --------------------------------------------------------
 
@@ -74,6 +68,44 @@ CREATE TABLE `logs` (
   `user` varchar(200) NOT NULL,
   `actions` varchar(200) NOT NULL,
   `timesstamp` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `notifications`
+--
+
+CREATE TABLE `notifications` (
+  `id` int(11) NOT NULL,
+  `user` varchar(20) NOT NULL,
+  `municipality` varchar(50) NOT NULL,
+  `actions` varchar(50) NOT NULL,
+  `timestamp` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `notifications`
+--
+
+INSERT INTO `notifications` (`id`, `user`, `municipality`, `actions`, `timestamp`) VALUES
+(3, 'Pao de Arc', 'Baliangao', 'Added cxz', '2022-10-19 14:32:59'),
+(4, 'Pao de Arc', 'Baliangao', 'Updated cxz2', '2022-10-19 14:33:27'),
+(5, 'Jimenez', 'Jimenez', 'Added 20-10-2022 of Reports', '2022-10-20 00:00:05'),
+(6, 'Jimenez', 'Jimenez', 'Added 20-10-2022 of Reports', '2022-10-20 00:02:45');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `reports`
+--
+
+CREATE TABLE `reports` (
+  `id` int(11) NOT NULL,
+  `municipality` varchar(100) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `file_loc` varchar(200) NOT NULL,
+  `timestamp` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -107,7 +139,8 @@ INSERT INTO `users` (`id`, `role`, `username`, `password`, `name`, `municipality
 (13, 'Municipality', 'jimenez', 'ee11cbb19052e40b07aac0ca060c23ee', 'Jimenez', 'Jimenez', 'jimenez@gmail.com', '09632357966', 'Female', 'IT Staff', '2022-10-18 07:48:43', '2022-10-18 07:48:43'),
 (14, 'Municipality', 'oroquieta', 'ee11cbb19052e40b07aac0ca060c23ee', 'Oroquieta City', 'Oroquieta', 'oroquieta@gmail.com', '09632357966', 'Male', 'IT Staff', '2022-10-18 08:00:28', '2022-10-18 08:00:28'),
 (15, 'Municipality', 'sinacaban', 'ee11cbb19052e40b07aac0ca060c23ee', 'Sinacaban', 'Sinacaban', 'sinacaban@gmail.com', '09632357966', 'Female', 'IT Staff', '2022-10-18 08:07:30', '2022-10-18 08:07:30'),
-(16, 'Municipality', 'panaon', 'ee11cbb19052e40b07aac0ca060c23ee', 'Panaon', 'Panaon', 'panaon@gmail.com', '09632357966', 'Male', 'IT Staff', '2022-10-18 08:08:50', '2022-10-18 08:08:50');
+(16, 'Municipality', 'panaon', 'ee11cbb19052e40b07aac0ca060c23ee', 'Panaon', 'Panaon', 'panaon@gmail.com', '09632357966', 'Male', 'IT Staff', '2022-10-18 08:08:50', '2022-10-18 08:08:50'),
+(17, 'Municipality', 'ozamis', 'ee11cbb19052e40b07aac0ca060c23ee', 'Ozamis City', 'Ozamis', 'ozamis@gmail.com', '09632357966', 'Female', 'IT Staff', '2022-10-19 08:39:45', '2022-10-19 08:39:45');
 
 --
 -- Indexes for dumped tables
@@ -126,6 +159,18 @@ ALTER TABLE `logs`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `notifications`
+--
+ALTER TABLE `notifications`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `reports`
+--
+ALTER TABLE `reports`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -139,19 +184,31 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `fem`
 --
 ALTER TABLE `fem`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `logs`
 --
 ALTER TABLE `logs`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
+
+--
+-- AUTO_INCREMENT for table `notifications`
+--
+ALTER TABLE `notifications`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT for table `reports`
+--
+ALTER TABLE `reports`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

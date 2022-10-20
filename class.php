@@ -125,6 +125,11 @@
         $stmt   -> execute();
         $stmt   -> close();
 
+        $name       = $_SESSION['name'];
+        $municipal  = $_SESSION['municipality'];  
+        $query2	= "INSERT INTO notifications (user,municipality,actions) VALUES ('$name','$municipal','Added $name_owner')";
+        $logs = mysqli_query($conn,$query2);
+
         header('location:index.php?page=AddEquipment');
         $_SESSION['response']="Successfully Inserted to the database!";
 		$_SESSION['res_type']="success";
@@ -156,38 +161,43 @@
         $stmt   -> execute();
         $stmt   -> close();
 
+        $name       = $_SESSION['name'];
+        $municipal  = $_SESSION['municipality'];  
+        $query2	= "INSERT INTO notifications (user,municipality,actions) VALUES ('$name','$municipal','Updated $name_owner')";
+        $logs = mysqli_query($conn,$query2);
+
         header('location:index.php?page=Equipment');
         $_SESSION['response']="$name_owner is Successfully Updated the database!";
 		$_SESSION['res_type']="success";
     }
-        // update user profile
-        if(isset($_POST['Update_profile']))
-        {
-            $name     = $_POST['name'];
-            $phone    = $_POST['phnumber'];
-            $username = $_POST['username'];
-            $email    = $_POST['email'];
-            $address  = $_POST['address'];
-            $position = $_POST['position'];
-            $sex      = $_POST['sex'];
-            $ser_id  = $_SESSION['id'];
-    
-            $query  = "UPDATE users SET name = ?, email = ?, Username = ?, contact = ?, municipality = ?,position=?,sex=? WHERE id = ? ";
-            $stmt   = $conn->prepare($query);
-            $stmt   -> bind_param("sssssssi",$name,$email,$username,$phone,$address,$position,$sex,$ser_id);
-            $stmt   -> execute();
-            $stmt       -> close();
-    
-            // $nameUser       = $_SESSION['name'];
-            // $query2	= "INSERT INTO logs (User,Purpose) VALUES ('$nameUser','$name | Admin Profile Updated')";
-            // $logs = mysqli_query($conn,$query2);
-    
-            $conn       -> close();
-    
-            $_SESSION['response']="Updated Successfully!";
-            $_SESSION['res_type']="primary";
-            header('location:index.php?page=Profile');
-        }
+    // update user profile
+    if(isset($_POST['Update_profile']))
+    {
+        $name     = $_POST['name'];
+        $phone    = $_POST['phnumber'];
+        $username = $_POST['username'];
+        $email    = $_POST['email'];
+        $address  = $_POST['address'];
+        $position = $_POST['position'];
+        $sex      = $_POST['sex'];
+        $ser_id  = $_SESSION['id'];
 
+        $query  = "UPDATE users SET name = ?, email = ?, Username = ?, contact = ?, municipality = ?,position=?,sex=? WHERE id = ? ";
+        $stmt   = $conn->prepare($query);
+        $stmt   -> bind_param("sssssssi",$name,$email,$username,$phone,$address,$position,$sex,$ser_id);
+        $stmt   -> execute();
+        $stmt       -> close();
 
+        // $nameUser       = $_SESSION['name'];
+        // $query2	= "INSERT INTO logs (User,Purpose) VALUES ('$nameUser','$name | Admin Profile Updated')";
+        // $logs = mysqli_query($conn,$query2);
+
+        $conn       -> close();
+
+        $_SESSION['response']="Updated Successfully!";
+        $_SESSION['res_type']="primary";
+        header('location:index.php?page=Profile');
+    }
+
+    
 ?>

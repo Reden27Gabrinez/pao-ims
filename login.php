@@ -11,12 +11,19 @@
 	<title>login-system</title>
 	<link rel="stylesheet" href="assets/bootstrap/js/bootstrap.js">
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+	body {
+		background-image: url('assets/bg.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	</style>
 </head>
 
 <body>
-	<div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh">
+	<div class="shadow container d-flex justify-content-center align-items-center" style="min-height: 100vh">
 		<form class="border shadow p-3 rounded" action="class.php" method="post" style="width: 450px;">
-			<h1 class="text-center p-3 ">LOGIN</h1>
+			<h1 class="text-center p-3 text-white">LOGIN</h1>
 
 			<?php if (isset($_GET['error'])) { ?>
 				<div class="alert alert-danger" role="alert">

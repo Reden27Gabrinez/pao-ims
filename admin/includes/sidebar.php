@@ -56,108 +56,183 @@
             </ul>
           </li>
 
+          <li class="nav-header">CITY</li>
+          <li class="nav-item">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon far fa-building"></i>
+              <p>
+                Oroquieta City
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="index.php?page=Equipment-Oroquieta" class="nav-link">
+                  <i class="fa fa-atom nav-icon"></i>
+                  <p>Equipment</p>
+                </a>
+              </li>
+
+
+              
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon far fa-building"></i>
+              <p>
+                Ozamis City
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="index.php?page=Equipment-Ozamis" class="nav-link">
+                  <i class="fa fa-atom nav-icon"></i>
+                  <p>Equipment</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon far fa-building"></i>
+              <p>
+                Tangub City
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="index.php?page=Equipment-Tangub" class="nav-link">
+                  <i class="fa fa-atom nav-icon"></i>
+                  <p>Equipment</p>
+                </a>
+              </li>
+            </ul>
+          </li>
 
           <li class="nav-header">MUNICIPALITY</li>
           <li class="nav-item">
             <a href="#" class="nav-link active">
               <i class="nav-icon far fa-building"></i>
               <p>
-                Oroguieta
+                Municipality
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="index.php?page=Equipment-Oroquieta" class="nav-link">
+                <a href="index.php?page=Equipment-Aloran" class="nav-link">
                   <i class="fa fa-atom nav-icon"></i>
-                  <p>Equipment</p>
+                  <p>Aloran</p>
                 </a>
               </li>
-              <!-- <li class="nav-item">
-                <a href="index.php?page=Equipment-Oroquieta" class="nav-link">
-                  <i class="fa fa-atom nav-icon"></i>
-                  <p>Machineries</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="index.php?page=Equipment-Oroquieta" class="nav-link">
-                  <i class="fa fa-atom nav-icon"></i>
-                  <p>Facility</p>
-                </a>
-              </li> -->
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link active">
-              <i class="nav-icon fas fa-mail-bulk"></i>
-              <p>
-                Sinacaban
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="index.php?page=Equipment-Sinacaban" class="nav-link">
-                  <i class="fa fa-atom nav-icon"></i>
-                  <p>Equipment</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link active">
-              <i class="nav-icon fas fa-wave-square"></i>
-              <p>
-                Jimenez
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="index.php?page=Equipment-Jimenez" class="nav-link">
-                  <i class="fa fa-atom nav-icon"></i>
-                  <p>Equipment</p>
-                </a>
-              </li>
-            </ul>
-          </li>
 
-          <li class="nav-item">
-            <a href="#" class="nav-link active">
-              <i class="nav-icon fas fa-boxes"></i>
-              <p>
-                Panaon
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="index.php?page=Equipment-Panaon" class="nav-link">
-                  <i class="fa fa-atom nav-icon"></i>
-                  <p>Equipment</p>
-                </a>
-              </li>
-            </ul>
-          </li>
 
-          <li class="nav-item">
-            <a href="#" class="nav-link active">
-              <i class="nav-icon fas fa-boxes"></i>
-              <p>
-                Baliangao
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="index.php?page=Equipment-Baliangao" class="nav-link">
                   <i class="fa fa-atom nav-icon"></i>
-                  <p>Equipment</p>
+                  <p>Baliangao</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="index.php?page=Equipment-Bonifacio" class="nav-link">
+                  <i class="fa fa-atom nav-icon"></i>
+                  <p>Bonifacio</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="index.php?page=Equipment-Calamba" class="nav-link">
+                  <i class="fa fa-atom nav-icon"></i>
+                  <p>Calamba</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="index.php?page=Equipment-Clarin" class="nav-link">
+                  <i class="fa fa-atom nav-icon"></i>
+                  <p>Clarin</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="index.php?page=Equipment-Conception" class="nav-link">
+                  <i class="fa fa-atom nav-icon"></i>
+                  <p>Conception</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="index.php?page=Equipment-Victoriano" class="nav-link">
+                  <i class="fa fa-atom nav-icon"></i>
+                  <p>Don Victoriano</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="index.php?page=Equipment-Jimenez" class="nav-link">
+                  <i class="fa fa-atom nav-icon"></i>
+                  <p>Jimenez</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="index.php?page=Equipment-Jaena" class="nav-link">
+                  <i class="fa fa-atom nav-icon"></i>
+                  <p>Lopez Jaena</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="index.php?page=Equipment-Panaon" class="nav-link">
+                  <i class="fa fa-atom nav-icon"></i>
+                  <p>Panaon</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="index.php?page=Equipment-Plaridel" class="nav-link">
+                  <i class="fa fa-atom nav-icon"></i>
+                  <p>Plaridel</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="index.php?page=Equipment-Dalaga" class="nav-link">
+                  <i class="fa fa-atom nav-icon"></i>
+                  <p>Sapang Dalaga</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="index.php?page=Equipment-Sinacaban" class="nav-link">
+                  <i class="fa fa-atom nav-icon"></i>
+                  <p>Sinacaban</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="index.php?page=Equipment-Tudela" class="nav-link">
+                  <i class="fa fa-atom nav-icon"></i>
+                  <p>Tudela</p>
                 </a>
               </li>
             </ul>
           </li>
 
+          <li class="nav-header">REPORT</li>
+          <li class="nav-item">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon far fa-building"></i>
+              <p>
+                Report
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="index.php?page=reports" class="nav-link">
+                  <i class="fa fa-atom nav-icon"></i>
+                  <p>Reports</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          
+          
           <li class="nav-header">
             BACK UP
           </li>

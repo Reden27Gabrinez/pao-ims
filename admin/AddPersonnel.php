@@ -75,6 +75,13 @@
                     <option value="Panaon">Panaon</option>
                     <option value="Jimenez">Jimenez</option>
                     <option value="Sinacaban">Sinacaban</option>
+                    <option value="Bonifacio">Bonifacio</option>
+                    <option value="">Clarin</option>
+                    <option value="Clarin">Conception</option>
+                    <option value="Don Victoriano">Don Victoriano</option>
+                    <option value="Tudela">Tudela</option>
+                    <option value="Ozamis">Ozamis City</option>
+                    <option value="Tangub">Tangub City</option>
                   </select>
                 </div>
               </div>
