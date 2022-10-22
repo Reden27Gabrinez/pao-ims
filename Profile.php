@@ -216,12 +216,7 @@
                                     <div class="form-group row">
                                         <label for="" class="col-sm-2 col-form-label">Position</label>
                                         <div class="col-sm-10">
-                                            <select required name="position" class="form-control select2 select2-danger"
-                                                data-dropdown-css-class="select2-danger" style="width: 100%;">
-                                                <option selected="selected" value="<?php  echo $row['position'];?>"><?php  echo $row['position'];?></option>
-                                                <option value="IT Staff">IT Staff</option>
-                                                <option value="Database Manager">Database Manager</option>
-                                            </select>
+                                            <input type="text" name="position" value="<?php  echo $row['position'];?>" class="form-control">
                                         </div>
                                     </div>
 

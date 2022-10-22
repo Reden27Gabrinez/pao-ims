@@ -15,7 +15,7 @@
           <img src="admin/plugins/dist/img/avatar2.png" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="index.php?page=Profile" class="d-block">USER</a>
+          <a href="index.php?page=Profile" class="d-block"><?php echo $_SESSION['name']; ?></a>
         </div>
       </div>
 

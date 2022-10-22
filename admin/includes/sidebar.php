@@ -55,6 +55,12 @@
               </li>
             </ul>
           </li>
+          <li class="nav-item">
+            <a href="index.php?page=all-data" class="nav-link active">
+              <i class="fa fa-globe"></i>
+              <p>All Data</p>
+            </a>
+          </li>
 
           <li class="nav-header">CITY</li>
           <li class="nav-item">
@@ -67,14 +73,23 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
+                <a href="index.php?page=Facility-Oroquieta" class="nav-link">
+                  <i class="fa fa-atom nav-icon"></i>
+                  <p>Facility</p>
+                </a>
+              </li>
+              <li class="nav-item">
                 <a href="index.php?page=Equipment-Oroquieta" class="nav-link">
                   <i class="fa fa-atom nav-icon"></i>
                   <p>Equipment</p>
                 </a>
-              </li>
-
-
-              
+              </li>    
+              <li class="nav-item">
+                <a href="index.php?page=Machinery-Oroquieta" class="nav-link">
+                  <i class="fa fa-atom nav-icon"></i>
+                  <p>Machinery</p>
+                </a>
+              </li> 
             </ul>
           </li>
           <li class="nav-item">
@@ -87,11 +102,23 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
+                <a href="index.php?page=Facility-Ozamis" class="nav-link">
+                  <i class="fa fa-atom nav-icon"></i>
+                  <p>Facility</p>
+                </a>
+              </li>
+              <li class="nav-item">
                 <a href="index.php?page=Equipment-Ozamis" class="nav-link">
                   <i class="fa fa-atom nav-icon"></i>
                   <p>Equipment</p>
                 </a>
-              </li>
+              </li>    
+              <li class="nav-item">
+                <a href="index.php?page=Machinery-Ozamis" class="nav-link">
+                  <i class="fa fa-atom nav-icon"></i>
+                  <p>Machinery</p>
+                </a>
+              </li> 
             </ul>
           </li>
           <li class="nav-item">
@@ -104,11 +131,23 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
+                <a href="index.php?page=Facility-Tangub" class="nav-link">
+                  <i class="fa fa-atom nav-icon"></i>
+                  <p>Facility</p>
+                </a>
+              </li>
+              <li class="nav-item">
                 <a href="index.php?page=Equipment-Tangub" class="nav-link">
                   <i class="fa fa-atom nav-icon"></i>
                   <p>Equipment</p>
                 </a>
-              </li>
+              </li>    
+              <li class="nav-item">
+                <a href="index.php?page=Machinery-Tangub" class="nav-link">
+                  <i class="fa fa-atom nav-icon"></i>
+                  <p>Machinery</p>
+                </a>
+              </li> 
             </ul>
           </li>
 
@@ -123,92 +162,382 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="index.php?page=Equipment-Aloran" class="nav-link">
+                <a href="" class="nav-link bg-info">
                   <i class="fa fa-atom nav-icon"></i>
-                  <p>Aloran</p>
+                  <p>Aloran<i class="right fas fa-angle-left"></i></p>
                 </a>
+                  <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a href="index.php?page=Facility-Aloran" class="nav-link">
+                        <i class="fa fa-church nav-icon"></i>
+                        <p>Facility</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="index.php?page=Equipment-Aloran" class="nav-link">
+                        <i class="fa fa-cog nav-icon"></i>
+                        <p>Equipment</p>
+                      </a>
+                    </li>    
+                    <li class="nav-item">
+                      <a href="index.php?page=Machinery-Aloran" class="nav-link">
+                        <i class="fa fa-bus nav-icon"></i>
+                        <p>Machinery</p>
+                      </a>
+                    </li> 
+                  </ul>
               </li>
 
 
               <li class="nav-item">
-                <a href="index.php?page=Equipment-Baliangao" class="nav-link">
+                <a href="" class="nav-link bg-info">
                   <i class="fa fa-atom nav-icon"></i>
-                  <p>Baliangao</p>
+                  <p>Baliangao<i class="right fas fa-angle-left"></i></p>
                 </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a href="index.php?page=Facility-Baliangao" class="nav-link">
+                        <i class="fa fa-church nav-icon"></i>
+                        <p>Facility</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="index.php?page=Equipment-Baliangao" class="nav-link">
+                        <i class="fa fa-cog nav-icon"></i>
+                        <p>Equipment</p>
+                      </a>
+                    </li>    
+                    <li class="nav-item">
+                      <a href="index.php?page=Machinery-Baliangao" class="nav-link">
+                        <i class="fa fa-bus nav-icon"></i>
+                        <p>Machinery</p>
+                      </a>
+                    </li> 
+                  </ul>
               </li>
 
               <li class="nav-item">
-                <a href="index.php?page=Equipment-Bonifacio" class="nav-link">
+                <a href="" class="nav-link bg-info">
                   <i class="fa fa-atom nav-icon"></i>
-                  <p>Bonifacio</p>
+                  <p>Bonifacio<i class="right fas fa-angle-left"></i></p>
                 </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a href="index.php?page=Facility-Bonifacio" class="nav-link">
+                        <i class="fa fa-church nav-icon"></i>
+                        <p>Facility</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="index.php?page=Equipment-Bonifacio" class="nav-link">
+                        <i class="fa fa-cog nav-icon"></i>
+                        <p>Equipment</p>
+                      </a>
+                    </li>    
+                    <li class="nav-item">
+                      <a href="index.php?page=Machinery-Bonifacio" class="nav-link">
+                        <i class="fa fa-bus nav-icon"></i>
+                        <p>Machinery</p>
+                      </a>
+                    </li> 
+                  </ul>
               </li>
 
               <li class="nav-item">
-                <a href="index.php?page=Equipment-Calamba" class="nav-link">
+                <a href="" class="nav-link bg-info">
                   <i class="fa fa-atom nav-icon"></i>
-                  <p>Calamba</p>
+                  <p>Calamba<i class="right fas fa-angle-left"></i></p>
                 </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a href="index.php?page=Facility-Calamba" class="nav-link">
+                        <i class="fa fa-church nav-icon"></i>
+                        <p>Facility</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="index.php?page=Equipment-Calamba" class="nav-link">
+                        <i class="fa fa-cog nav-icon"></i>
+                        <p>Equipment</p>
+                      </a>
+                    </li>    
+                    <li class="nav-item">
+                      <a href="index.php?page=Machinery-Calamba" class="nav-link">
+                        <i class="fa fa-bus nav-icon"></i>
+                        <p>Machinery</p>
+                      </a>
+                    </li> 
+                  </ul>
               </li>
+
               <li class="nav-item">
-                <a href="index.php?page=Equipment-Clarin" class="nav-link">
+                <a href="" class="nav-link bg-info">
                   <i class="fa fa-atom nav-icon"></i>
-                  <p>Clarin</p>
+                  <p>Clarin<i class="right fas fa-angle-left"></i></p>
                 </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a href="index.php?page=Facility-Clarin" class="nav-link">
+                        <i class="fa fa-church nav-icon"></i>
+                        <p>Facility</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="index.php?page=Equipment-Clarin" class="nav-link">
+                        <i class="fa fa-cog nav-icon"></i>
+                        <p>Equipment</p>
+                      </a>
+                    </li>    
+                    <li class="nav-item">
+                      <a href="index.php?page=Machinery-Clarin" class="nav-link">
+                        <i class="fa fa-bus nav-icon"></i>
+                        <p>Machinery</p>
+                      </a>
+                    </li> 
+                  </ul>
               </li>
+
               <li class="nav-item">
-                <a href="index.php?page=Equipment-Conception" class="nav-link">
+                <a href="" class="nav-link bg-info">
                   <i class="fa fa-atom nav-icon"></i>
-                  <p>Conception</p>
+                  <p>Conception<i class="right fas fa-angle-left"></i></p>
                 </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a href="index.php?page=Facility-Conception" class="nav-link">
+                        <i class="fa fa-church nav-icon"></i>
+                        <p>Facility</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="index.php?page=Equipment-Conception" class="nav-link">
+                        <i class="fa fa-cog nav-icon"></i>
+                        <p>Equipment</p>
+                      </a>
+                    </li>    
+                    <li class="nav-item">
+                      <a href="index.php?page=Machinery-Conception" class="nav-link">
+                        <i class="fa fa-bus nav-icon"></i>
+                        <p>Machinery</p>
+                      </a>
+                    </li> 
+                  </ul>
               </li>
+
               <li class="nav-item">
-                <a href="index.php?page=Equipment-Victoriano" class="nav-link">
+                <a href="" class="nav-link bg-info">
                   <i class="fa fa-atom nav-icon"></i>
-                  <p>Don Victoriano</p>
+                  <p>Don Victoriano<i class="right fas fa-angle-left"></i></p>
                 </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a href="index.php?page=Facility-Victoriano" class="nav-link">
+                        <i class="fa fa-church nav-icon"></i>
+                        <p>Facility</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="index.php?page=Equipment-Victoriano" class="nav-link">
+                        <i class="fa fa-cog nav-icon"></i>
+                        <p>Equipment</p>
+                      </a>
+                    </li>    
+                    <li class="nav-item">
+                      <a href="index.php?page=Machinery-Victoriano" class="nav-link">
+                        <i class="fa fa-bus nav-icon"></i>
+                        <p>Machinery</p>
+                      </a>
+                    </li> 
+                  </ul>
               </li>
+
               <li class="nav-item">
-                <a href="index.php?page=Equipment-Jimenez" class="nav-link">
+                <a href="" class="nav-link bg-info">
                   <i class="fa fa-atom nav-icon"></i>
-                  <p>Jimenez</p>
+                  <p>Jimenez<i class="right fas fa-angle-left"></i></p>
                 </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a href="index.php?page=Facility-Jimenez" class="nav-link">
+                        <i class="fa fa-church nav-icon"></i>
+                        <p>Facility</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="index.php?page=Equipment-Jimenez" class="nav-link">
+                        <i class="fa fa-cog nav-icon"></i>
+                        <p>Equipment</p>
+                      </a>
+                    </li>    
+                    <li class="nav-item">
+                      <a href="index.php?page=Machinery-Jimenez" class="nav-link">
+                        <i class="fa fa-bus nav-icon"></i>
+                        <p>Machinery</p>
+                      </a>
+                    </li> 
+                  </ul>
               </li>
+
               <li class="nav-item">
-                <a href="index.php?page=Equipment-Jaena" class="nav-link">
+                <a href="" class="nav-link bg-info">
                   <i class="fa fa-atom nav-icon"></i>
-                  <p>Lopez Jaena</p>
+                  <p>Lopez Jaena<i class="right fas fa-angle-left"></i></p>
                 </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a href="index.php?page=Facility-Jaena" class="nav-link">
+                        <i class="fa fa-church nav-icon"></i>
+                        <p>Facility</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="index.php?page=Equipment-Jaena" class="nav-link">
+                        <i class="fa fa-cog nav-icon"></i>
+                        <p>Equipment</p>
+                      </a>
+                    </li>    
+                    <li class="nav-item">
+                      <a href="index.php?page=Machinery-Jaena" class="nav-link">
+                        <i class="fa fa-bus nav-icon"></i>
+                        <p>Machinery</p>
+                      </a>
+                    </li> 
+                  </ul>
               </li>
+
               <li class="nav-item">
-                <a href="index.php?page=Equipment-Panaon" class="nav-link">
+                <a href="" class="nav-link bg-info">
                   <i class="fa fa-atom nav-icon"></i>
-                  <p>Panaon</p>
+                  <p>Panaon<i class="right fas fa-angle-left"></i></p>
                 </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a href="index.php?page=Facility-Panaon" class="nav-link">
+                        <i class="fa fa-church nav-icon"></i>
+                        <p>Facility</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="index.php?page=Equipment-Panaon" class="nav-link">
+                        <i class="fa fa-cog nav-icon"></i>
+                        <p>Equipment</p>
+                      </a>
+                    </li>    
+                    <li class="nav-item">
+                      <a href="index.php?page=Machinery-Panaon" class="nav-link">
+                        <i class="fa fa-bus nav-icon"></i>
+                        <p>Machinery</p>
+                      </a>
+                    </li> 
+                  </ul>
               </li>
+
               <li class="nav-item">
-                <a href="index.php?page=Equipment-Plaridel" class="nav-link">
+                <a href="" class="nav-link bg-info">
                   <i class="fa fa-atom nav-icon"></i>
-                  <p>Plaridel</p>
+                  <p>Plaridel<i class="right fas fa-angle-left"></i></p>
                 </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a href="index.php?page=Facility-Plaridel" class="nav-link">
+                        <i class="fa fa-church nav-icon"></i>
+                        <p>Facility</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="index.php?page=Equipment-Plaridel" class="nav-link">
+                        <i class="fa fa-cog nav-icon"></i>
+                        <p>Equipment</p>
+                      </a>
+                    </li>    
+                    <li class="nav-item">
+                      <a href="index.php?page=Machinery-Plaridel" class="nav-link">
+                        <i class="fa fa-bus nav-icon"></i>
+                        <p>Machinery</p>
+                      </a>
+                    </li> 
+                  </ul>
               </li>
+
               <li class="nav-item">
-                <a href="index.php?page=Equipment-Dalaga" class="nav-link">
+                <a href="" class="nav-link bg-info">
                   <i class="fa fa-atom nav-icon"></i>
-                  <p>Sapang Dalaga</p>
+                  <p>Sapang Dalaga<i class="right fas fa-angle-left"></i></p>
                 </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a href="index.php?page=Facility-Dalaga" class="nav-link">
+                        <i class="fa fa-church nav-icon"></i>
+                        <p>Facility</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="index.php?page=Equipment-Dalaga" class="nav-link">
+                        <i class="fa fa-cog nav-icon"></i>
+                        <p>Equipment</p>
+                      </a>
+                    </li>    
+                    <li class="nav-item">
+                      <a href="index.php?page=Machinery-Dalaga" class="nav-link">
+                        <i class="fa fa-bus nav-icon"></i>
+                        <p>Machinery</p>
+                      </a>
+                    </li> 
+                  </ul>
               </li>
+
               <li class="nav-item">
-                <a href="index.php?page=Equipment-Sinacaban" class="nav-link">
+                <a href="" class="nav-link bg-info">
                   <i class="fa fa-atom nav-icon"></i>
-                  <p>Sinacaban</p>
+                  <p>Sinacaban<i class="right fas fa-angle-left"></i></p>
                 </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a href="index.php?page=Facility-Sinacaban" class="nav-link">
+                        <i class="fa fa-church nav-icon"></i>
+                        <p>Facility</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="index.php?page=Equipment-Sinacaban" class="nav-link">
+                        <i class="fa fa-cog nav-icon"></i>
+                        <p>Equipment</p>
+                      </a>
+                    </li>    
+                    <li class="nav-item">
+                      <a href="index.php?page=Machinery-Sinacaban" class="nav-link">
+                        <i class="fa fa-bus nav-icon"></i>
+                        <p>Machinery</p>
+                      </a>
+                    </li> 
+                  </ul>
               </li>
+
               <li class="nav-item">
-                <a href="index.php?page=Equipment-Tudela" class="nav-link">
+                <a href="" class="nav-link bg-info">
                   <i class="fa fa-atom nav-icon"></i>
-                  <p>Tudela</p>
+                  <p>Tudela<i class="right fas fa-angle-left"></i></p>
                 </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a href="index.php?page=Facility-Tudela" class="nav-link">
+                        <i class="fa fa-church nav-icon"></i>
+                        <p>Facility</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="index.php?page=Equipment-Tudela" class="nav-link">
+                        <i class="fa fa-cog nav-icon"></i>
+                        <p>Equipment</p>
+                      </a>
+                    </li>    
+                    <li class="nav-item">
+                      <a href="index.php?page=Machinery-Tudela" class="nav-link">
+                        <i class="fa fa-bus nav-icon"></i>
+                        <p>Machinery</p>
+                      </a>
+                    </li> 
+                  </ul>
               </li>
             </ul>
           </li>

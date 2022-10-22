@@ -4,7 +4,7 @@
 include('../../configuration/config.php');
 include_once('Mysqldump/Mysqldump.php');
 include('smtp/PHPMailerAutoload.php');
-$dump = new Ifsnop\Mysqldump\Mysqldump('mysql:host=localhost;dbname=pao', 'root', '');
+$dump = new Ifsnop\Mysqldump\Mysqldump('mysql:host=localhost;dbname=pao', 'root', 'Reden27Gabrinez');
 $f=date('d-m-Y');
 $dump->start("sql_dump/$f.sql");
 

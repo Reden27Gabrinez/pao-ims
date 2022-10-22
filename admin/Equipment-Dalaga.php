@@ -29,7 +29,7 @@
             <!-- /.card-header -->
             <div class="card-body">
               <?php
-                    $query  = "SELECT * FROM fem WHERE municipality = 'Sapang Dalaga' ORDER BY created_at DESC";
+                    $query  = "SELECT * FROM fem WHERE municipality = 'Sapang Dalaga' AND categories = 'Equipment' ORDER BY created_at DESC";
                     $stmt   = $conn->prepare($query);
                     $stmt   ->execute();
                     $result = $stmt->get_result();

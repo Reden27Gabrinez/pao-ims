@@ -106,6 +106,7 @@
         $name_owner     = $_POST['name_owner'];
         $location       = $_POST['location'];
         $type_owner     = $_POST['type_owner'];
+        $FaEqMa         = $_POST['FaEqMa'];
         $fem            = $_POST['fem'];
         $units          = $_POST['units'];
         $capacity       = $_POST['capacity'];
@@ -119,9 +120,9 @@
         $eng_brand      = $_POST['eng_brand'];
         $eng_hp         = $_POST['eng_hp'];
 
-        $query = "INSERT INTO fem (user,municipality,name_owner,location,type_owner,fem,units,capacity,brand,mode_aquisition,cost_aquisition,yr_acquired,use_facility,facility_cond,commodity,engine_brand,horsepower) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+        $query = "INSERT INTO fem (user,municipality,name_owner,location,type_owner,categories,fem,units,capacity,brand,mode_aquisition,cost_aquisition,yr_acquired,use_facility,facility_cond,commodity,engine_brand,horsepower) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
         $stmt   = $conn->prepare($query);
-        $stmt   -> bind_param("sssssssssssssssss",$user,$muni,$name_owner,$location,$type_owner,$fem,$units,$capacity,$fac_brand,$mode_acqui,$cost_acqui,$yr_acqui,$use_fac,$fac_cond,$commodity,$eng_brand,$eng_hp);
+        $stmt   -> bind_param("ssssssssssssssssss",$user,$muni,$name_owner,$location,$type_owner,$FaEqMa,$fem,$units,$capacity,$fac_brand,$mode_acqui,$cost_acqui,$yr_acqui,$use_fac,$fac_cond,$commodity,$eng_brand,$eng_hp);
         $stmt   -> execute();
         $stmt   -> close();
 
@@ -142,6 +143,7 @@
         $name_owner     = $_POST['name_owner'];
         $location       = $_POST['location'];
         $type_owner     = $_POST['type_owner'];
+        $FaEqMa         = $_POST['FaEqMa'];
         $fem            = $_POST['fem'];
         $units          = $_POST['units'];
         $capacity       = $_POST['capacity'];
@@ -155,9 +157,9 @@
         $eng_brand      = $_POST['eng_brand'];
         $eng_hp         = $_POST['eng_hp'];
 
-        $query = "UPDATE fem SET name_owner=?,location=?,type_owner=?,fem=?,units=?,capacity=?,brand=?,mode_aquisition=?,cost_aquisition=?,yr_acquired=?,use_facility=?,facility_cond=?,commodity=?,engine_brand=?,horsepower=? WHERE id=?";
+        $query = "UPDATE fem SET name_owner=?,location=?,type_owner=?,categories=?,fem=?,units=?,capacity=?,brand=?,mode_aquisition=?,cost_aquisition=?,yr_acquired=?,use_facility=?,facility_cond=?,commodity=?,engine_brand=?,horsepower=? WHERE id=?";
         $stmt   = $conn->prepare($query);
-        $stmt   -> bind_param("sssssssssssssssi",$name_owner,$location,$type_owner,$fem,$units,$capacity,$fac_brand,$mode_acqui,$cost_acqui,$yr_acqui,$use_fac,$fac_cond,$commodity,$eng_brand,$eng_hp,$id);
+        $stmt   -> bind_param("ssssssssssssssssi",$name_owner,$location,$type_owner,$FaEqMa,$fem,$units,$capacity,$fac_brand,$mode_acqui,$cost_acqui,$yr_acqui,$use_fac,$fac_cond,$commodity,$eng_brand,$eng_hp,$id);
         $stmt   -> execute();
         $stmt   -> close();
 
