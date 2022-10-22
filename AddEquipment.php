@@ -46,19 +46,19 @@
                     <!-- /.card-header -->
                     <div class="card-body bg-gray">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-3">
                                 <div class="form-group">
                                     <label for="">Name of Owner</label>
                                     <input name="name_owner" type="text" class="form-control">
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-3">
                                 <div class="form-group">
                                     <label for="">Barangay | Location</label>
                                     <input name="location" type="text" class="form-control">
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-3">
                                 <div class="form-group">
                                 <label>Type of Owner</label>
                                 <select required name="type_owner" class="form-control select2" style="width: 100%;">
@@ -71,6 +71,17 @@
                                     <option value="Enterprise">Enterprise</option>
                                     <option value="Government">Government</option>
                                     <option value="CEFAR">CEFAR</option>
+                                </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                <label>Categories</label>
+                                <select required name="FaEqMa" class="form-control select2" style="width: 100%;">
+                                    <option selected="selected" value="">Choose</option>
+                                    <option value="Facility">Facility</option>
+                                    <option value="Equipment">Equipment</option>
+                                    <option value="Machinery">Machinery</option>
                                 </select>
                                 </div>
                             </div>

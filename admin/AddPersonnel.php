@@ -88,12 +88,7 @@
               <div class="col-md-3">
                 <div class="form-group">
                   <label>Position</label>
-                  <select required name="position" class="form-control select2 select2-danger"
-                    data-dropdown-css-class="select2-danger" style="width: 100%;">
-                    <option selected="selected" value="">Please Choose</option>
-                    <option value="IT Staff">IT Staff</option>
-                    <option value="Database Manager">Database Manager</option>
-                  </select>
+                  <input type="text" name="position" class="form-control">
                 </div>
                 <!-- /.form-group -->
               </div>
