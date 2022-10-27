@@ -11,8 +11,8 @@
             </ul>
 
             <!-- name-->
-            <div style="margin-left:12rem; font-size: 1.5rem; font-weight:800;">
-                PAO INFORMATION MANAGEMENT SYSTEM
+            <div style=" font-size: 1.5rem; font-weight:800;">
+                PROVINCIAL AGRICULTURE OFFICE INVENTORY AND MANAGEMENT SYSTEM
             </div>
 
                </nav>
