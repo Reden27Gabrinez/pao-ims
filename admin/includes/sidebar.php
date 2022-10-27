@@ -90,6 +90,12 @@
                   <p>Machinery</p>
                 </a>
               </li> 
+              <li class="nav-item">
+                <a href="index.php?page=Stocks-Oroquieta" class="nav-link">
+                  <i class="fa fa-atom nav-icon"></i>
+                  <p>Stocks</p>
+                </a>
+              </li> 
             </ul>
           </li>
           <li class="nav-item">
@@ -119,6 +125,12 @@
                   <p>Machinery</p>
                 </a>
               </li> 
+              <li class="nav-item">
+                <a href="index.php?page=Stocks-Ozamis" class="nav-link">
+                  <i class="fa fa-atom nav-icon"></i>
+                  <p>Stocks</p>
+                </a>
+              </li> 
             </ul>
           </li>
           <li class="nav-item">
@@ -146,6 +158,12 @@
                 <a href="index.php?page=Machinery-Tangub" class="nav-link">
                   <i class="fa fa-atom nav-icon"></i>
                   <p>Machinery</p>
+                </a>
+              </li> 
+              <li class="nav-item">
+                <a href="index.php?page=Stocks-Tangub" class="nav-link">
+                  <i class="fa fa-atom nav-icon"></i>
+                  <p>Stocks</p>
                 </a>
               </li> 
             </ul>
@@ -185,6 +203,12 @@
                         <p>Machinery</p>
                       </a>
                     </li> 
+                    <li class="nav-item">
+                      <a href="index.php?page=Stocks-Aloran" class="nav-link">
+                        <i class="fa fa-folder nav-icon"></i>
+                        <p>Stocks</p>
+                      </a>
+                    </li> 
                   </ul>
               </li>
 
@@ -212,7 +236,13 @@
                         <i class="fa fa-bus nav-icon"></i>
                         <p>Machinery</p>
                       </a>
-                    </li> 
+                    </li>
+                    <li class="nav-item">
+                      <a href="index.php?page=Stocks-Baliangao" class="nav-link">
+                        <i class="fa fa-folder nav-icon"></i>
+                        <p>Stocks</p>
+                      </a>
+                    </li>
                   </ul>
               </li>
 
@@ -235,11 +265,11 @@
                       </a>
                     </li>    
                     <li class="nav-item">
-                      <a href="index.php?page=Machinery-Bonifacio" class="nav-link">
-                        <i class="fa fa-bus nav-icon"></i>
-                        <p>Machinery</p>
+                      <a href="index.php?page=Stocks-Bonifacio" class="nav-link">
+                        <i class="fa fa-folder nav-icon"></i>
+                        <p>Stocks</p>
                       </a>
-                    </li> 
+                    </li>
                   </ul>
               </li>
 
@@ -267,6 +297,12 @@
                         <p>Machinery</p>
                       </a>
                     </li> 
+                    <li class="nav-item">
+                      <a href="index.php?page=Stocks-Calamba" class="nav-link">
+                        <i class="fa fa-folder nav-icon"></i>
+                        <p>Stocks</p>
+                      </a>
+                    </li>
                   </ul>
               </li>
 
@@ -294,6 +330,12 @@
                         <p>Machinery</p>
                       </a>
                     </li> 
+                    <li class="nav-item">
+                      <a href="index.php?page=Stocks-Clarin" class="nav-link">
+                        <i class="fa fa-folder nav-icon"></i>
+                        <p>Stocks</p>
+                      </a>
+                    </li>
                   </ul>
               </li>
 
@@ -321,6 +363,12 @@
                         <p>Machinery</p>
                       </a>
                     </li> 
+                    <li class="nav-item">
+                      <a href="index.php?page=Stocks-Conception" class="nav-link">
+                        <i class="fa fa-folder nav-icon"></i>
+                        <p>Stocks</p>
+                      </a>
+                    </li>
                   </ul>
               </li>
 
@@ -348,6 +396,12 @@
                         <p>Machinery</p>
                       </a>
                     </li> 
+                    <li class="nav-item">
+                      <a href="index.php?page=Stocks-Victoriano" class="nav-link">
+                        <i class="fa fa-folder nav-icon"></i>
+                        <p>Stocks</p>
+                      </a>
+                    </li>
                   </ul>
               </li>
 
@@ -375,6 +429,12 @@
                         <p>Machinery</p>
                       </a>
                     </li> 
+                    <li class="nav-item">
+                      <a href="index.php?page=Stocks-Jimenez" class="nav-link">
+                        <i class="fa fa-folder nav-icon"></i>
+                        <p>Stocks</p>
+                      </a>
+                    </li>
                   </ul>
               </li>
 
@@ -402,6 +462,12 @@
                         <p>Machinery</p>
                       </a>
                     </li> 
+                    <li class="nav-item">
+                      <a href="index.php?page=Stocks-Jaena" class="nav-link">
+                        <i class="fa fa-folder nav-icon"></i>
+                        <p>Stocks</p>
+                      </a>
+                    </li>
                   </ul>
               </li>
 
@@ -429,6 +495,12 @@
                         <p>Machinery</p>
                       </a>
                     </li> 
+                    <li class="nav-item">
+                      <a href="index.php?page=Stocks-Panaon" class="nav-link">
+                        <i class="fa fa-folder nav-icon"></i>
+                        <p>Stocks</p>
+                      </a>
+                    </li>
                   </ul>
               </li>
 
@@ -456,6 +528,12 @@
                         <p>Machinery</p>
                       </a>
                     </li> 
+                    <li class="nav-item">
+                      <a href="index.php?page=Stocks-Plaridel" class="nav-link">
+                        <i class="fa fa-folder nav-icon"></i>
+                        <p>Stocks</p>
+                      </a>
+                    </li>
                   </ul>
               </li>
 
@@ -482,7 +560,13 @@
                         <i class="fa fa-bus nav-icon"></i>
                         <p>Machinery</p>
                       </a>
-                    </li> 
+                    </li>
+                    <li class="nav-item">
+                      <a href="index.php?page=Stocks-Dalaga" class="nav-link">
+                        <i class="fa fa-folder nav-icon"></i>
+                        <p>Stocks</p>
+                      </a>
+                    </li>
                   </ul>
               </li>
 
@@ -510,6 +594,12 @@
                         <p>Machinery</p>
                       </a>
                     </li> 
+                    <li class="nav-item">
+                      <a href="index.php?page=Stocks-Sinacaban" class="nav-link">
+                        <i class="fa fa-folder nav-icon"></i>
+                        <p>Stocks</p>
+                      </a>
+                    </li>
                   </ul>
               </li>
 
@@ -537,6 +627,12 @@
                         <p>Machinery</p>
                       </a>
                     </li> 
+                    <li class="nav-item">
+                      <a href="index.php?page=Stocks-Tudela" class="nav-link">
+                        <i class="fa fa-folder nav-icon"></i>
+                        <p>Stocks</p>
+                      </a>
+                    </li>
                   </ul>
               </li>
             </ul>
