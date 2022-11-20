@@ -2,7 +2,7 @@
 
 $sname = "localhost";
 $uname = "root";
-$password = "Reden27Gabrinez";
+$password = "";
 
 $db_name = "pao";
 
