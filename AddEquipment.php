@@ -55,7 +55,56 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label for="">Barangay | Location</label>
-                                    <input name="location" type="text" class="form-control">
+                                    <!-- <input name="location" type="text" class="form-control"> -->
+                                    <select required name="location" class="form-control select2" style="width: 100%;">
+                                        <option selected="selected" value="">Choose</option>
+                                        <option value="Balintonga">Balintonga</option>
+                                        <option value="Banisilon">Banisilon</option>
+                                        <option value="Burgos">Burgos</option>
+                                        <option value="Calube">Calube</option>
+                                        <option value="Caputol">Caputol</option>
+                                        <option value="Casusan">Casusan</option>
+                                        <option value="Conat">Conat</option>
+                                        <option value="Culpan">Culpan</option>
+                                        <option value="Dalisay">Dalisay</option>
+                                        <option value="Dullan">Dullan</option>
+                                        <option value="Ibabao">Ibabao</option>
+                                        <option value="Labo">Labo</option>
+                                        <option value="Lawa-an">Lawa-an</option>
+                                        <option value="Lobogon">Lobogon</option>
+                                        <option value="Lumbayao">Lumbayao</option>
+                                        <option value="Macubon">Macubon</option>
+                                        <option value="Makawa">Makawa</option>
+                                        <option value="Manamong">Manamong</option>
+                                        <option value="Matipaz">Matipaz</option>
+                                        <option value="Maular">Maular</option>
+                                        <option value="Mitazan">Mitazan</option>
+                                        <option value="Mohon">Mohon</option>
+                                        <option value="Monterico">Monterico</option>
+                                        <option value="Nabuna">Nabuna</option>
+                                        <option value="Ospital">Ospital</option>
+                                        <option value="Palayan">Palayan</option>
+                                        <option value="Pelong"></option>
+                                        <option value="Roxas">Pelong</option>
+                                        <option value="San Pedro">San Pedro</option>
+                                        <option value="Santa Ana">Santa Ana</option>
+                                        <option value="Sinampongan">Sinampongan</option>
+                                        <option value="Taguanao">Taguanao</option>
+                                        <option value="Tawi-tawi">Tawi-tawi</option>
+                                        <option value="Toril">Toril</option>
+                                        <option value="Tubod">Tubod</option>
+                                        <option value="Tuburan">Tuburan</option>
+                                        <option value="Tugaya">Tugaya</option>
+                                        <option value="Zamora">Zamora</option>
+
+                                        <!-- <option value=""></option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                        <option value=""></option> -->
+                                    </select>
                                 </div>
                             </div>
                             <div class="col-md-3">

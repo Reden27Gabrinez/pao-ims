@@ -35,7 +35,7 @@
             <div class="inner">
               <h3><?= $count_; ?></h3>
 
-              <p><?php echo $_SESSION['municipality']; ?> </p>
+              <p><?php echo $_SESSION['municipality']; ?> City</p>
             </div>
             <div class="icon">
               <i class="ion ion-bag"></i>
