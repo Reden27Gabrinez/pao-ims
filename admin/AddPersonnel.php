@@ -120,7 +120,7 @@
                     <option value="Jimenez">Jimenez</option>
                     <option value="Sinacaban">Sinacaban</option>
                     <option value="Bonifacio">Bonifacio</option>
-                    <option value="">Clarin</option>
+                    <option value="Clarin">Clarin</option>
                     <option value="Clarin">Conception</option>
                     <option value="Don Victoriano">Don Victoriano</option>
                     <option value="Tudela">Tudela</option>

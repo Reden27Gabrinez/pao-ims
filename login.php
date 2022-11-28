@@ -17,7 +17,7 @@
 			opacity: 0.7;
 		}
 	body {
-		background-image: url('assets/bg2.jpg');
+		background-image: url('assets/bg3.png');
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
@@ -25,7 +25,8 @@
 </head>
 
 <body>
-	<div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh">
+	<a href="https://saad.da.gov.ph/priority_provinces/region-x/misamis-occidental" target="_blank"><img class="rounded-circle m-1" src="assets/bg2.jpg" alt="" height="100px" width="100px"></a>
+	<div class="container d-flex justify-content-center align-items-center" style="min-height: 70vh">
 		<form class=" border shadow p-3 rounded" action="class.php" method="post" style="width: 450px;">
 			<h1 class="text-center p-3">LOGIN</h1>
 
@@ -52,7 +53,7 @@
 			</div>
 			<select class="form-select mb-3" name="role" aria-label="Default select example">
 				<option selected value="Admin">Admin</option>
-				<option value="Municipality">Municipality</option>
+				<option value="Municipality">User</option>
 			</select>
 
 			<button type="submit" name="login" class="btn btn-primary float-end">LOGIN</button>
